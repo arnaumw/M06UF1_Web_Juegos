@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script type="text/javascript" src="functions_D.js">
+        </script>
+    </head>
+    <body style="font-family: sans-serif;">
+        
+        <h1 style="text-align: center">Piensa un número entre 1 y 100</h1>
+ 
+       <h2 style="color: salmon; text-align: center;"><b>LO VOY A ADIVINAR!</b></h2>
+        <div id="contenido" style="text-align: center;">
+            
+            <p id="titulo" style="color: #559db5;" hidden><b>¿ES ESTE TU NUMERO?</b></p>
+            
+            <p id="Numero"></p>
+            
+            <button id="MasGrande" onclick="adivinarGrande()" hidden>Mas Grande</button>
+            
+            <button id="MasPeque" onclick="adivinarPeque()" hidden>Mas Pequeño</button>
+            
+            <br><br>
+            
+            <button id="MiNumero" onclick="miNumero()" hidden>ES MI NUMERO!</button>
+            
+            <button id="Empezar" onclick="empieza()">EMPEZAR</button>
+ 
+            <br><br>
+ 
+            <div id="respuesta">
+        
+            </div>
+        
+            <p id="contador"></p>
+            
+            <form action="Adivina_menu.html">
+                <input type="submit" value="VOLVER" />
+            </form>
+            
+         </div>   
+        
+    </body>
+</html>
