@@ -9,9 +9,9 @@ function adivinalo() {
     
     if(contadorRespuestas != numeroRespuestas){
         
-        var numero = document.getElementById("numero").value;       
+        var numero = document.getElementById("numero").value;      
         
-        if(numero > 0 && numero < 50) {
+        if(numero > numMin && numero < numMax){} {
             
             contadorRespuestas--;
             console.log(contadorRespuestas);

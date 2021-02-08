@@ -11,7 +11,7 @@ function adivinalo() {
         
         var numero = document.getElementById("numero").value;       
         
-        if(numero > 0 && numero < 100) {
+        if(numero > numMin && numero < numMax){} {
             
             contadorRespuestas--;
             console.log(contadorRespuestas);
