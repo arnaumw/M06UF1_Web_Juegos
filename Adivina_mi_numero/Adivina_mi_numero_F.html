@@ -3,29 +3,37 @@
     <head>
         <title></title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <script type="text/javascript" src="functions_F.js">
+        <script type="text/javascript" src="../Clases/Juego.js">
         </script>
     </head>
     <body style="font-family: sans-serif;">
         
         <h1 style="text-align: center">Piensa un número entre 1 y 10</h1>
+        
  
        <h2 style="color: salmon; text-align: center;"><b>LO VOY A ADIVINAR!</b></h2>
         <div id="contenido" style="text-align: center;">
+
+            <input type="radio" id="facil" checked>
+            <label for="facil">Facil</label>
+            <input type="radio" id="medio" disabled="disabled">
+            <label for="medio">Medio</label>
+            <input type="radio" id="dificil" disabled="disabled">
+            <label for="dificil">Dificil</label>
             
             <p id="titulo" style="color: #559db5;" hidden><b>¿ES ESTE TU NUMERO?</b></p>
             
             <p id="Numero"></p>
             
-            <button id="MasGrande" onclick="adivinarGrande()" hidden>Mas Grande</button>
+            <button id="MasGrande" onclick="r2.adivinarGrande()" hidden>Mas Grande</button>
             
-            <button id="MasPeque" onclick="adivinarPeque()" hidden>Mas Pequeño</button>
+            <button id="MasPeque" onclick="r2.adivinarPeque()" hidden>Mas Pequeño</button>
             
             <br><br>
             
-            <button id="MiNumero" onclick="miNumero()" hidden>ES MI NUMERO!</button>
+            <button id="MiNumero" onclick="r2.miNumero()" hidden>ES MI NUMERO!</button>
             
-            <button id="Empezar" onclick="empieza()">EMPEZAR</button>
+            <button id="Empezar" onclick="r2.start()">EMPEZAR</button>
  
             <br><br>
  
@@ -38,6 +46,9 @@
             <form action="Adivina_menu.html">
                 <input type="submit" value="VOLVER" />
             </form>
+
+            <br>
+            <p id="pistas"></p>
             
          </div>   
         
